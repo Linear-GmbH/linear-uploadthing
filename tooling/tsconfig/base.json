@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "../..",
     "paths": {
-      "@uploadthing/shared": ["packages/shared/src"],
+      "@linear-webdev/shared": ["packages/shared/src"],
       "@linear-webdev/mime-types": ["packages/mime-types/src"],
       "@uploadthing/react": ["packages/react/src"],
       "@uploadthing/react/*": ["packages/react/src/*"],

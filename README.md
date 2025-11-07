@@ -21,3 +21,14 @@ cd packages/mime-types
 pnpm build
 pnpm publish --access public
 ```
+
+### Step 2: Shared
+
+Adjust the version in `packages/shared/package.json` as needed, then run:
+
+```shell
+cd packages/shared
+pnpm i
+pnpm tsdown
+pnpm publish --access public
+```

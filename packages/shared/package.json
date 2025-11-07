@@ -1,10 +1,10 @@
 {
-  "name": "@uploadthing/shared",
-  "version": "7.1.10",
+  "name": "@linear-webdev/shared",
+  "version": "1.0.1",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "github:pingdotgg/uploadthing",
+    "url": "github:Linear-GmbH/linear-uploadthing",
     "directory": "packages/shared"
   },
   "sideEffects": false,
@@ -41,7 +41,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@uploadthing/mime-types": "workspace:*",
+    "@linear-webdev/mime-types": "workspace:*",
     "effect": "3.17.7",
     "sqids": "^0.3.0"
   },

@@ -6,5 +6,5 @@ export default [
     ignores: ["dist/**"],
   },
   ...baseConfig,
-  noSelfImport("@uploadthing/shared"),
+  noSelfImport("@linear-webdev/shared"),
 ];

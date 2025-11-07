@@ -7,10 +7,10 @@ import type { RenderFunction, StyleValue } from "vue";
  * We don't need all the types, and `/application`
  * entrypoint is ~7k gzip which we can shave off
  */
-import { audio } from "@uploadthing/mime-types/audio";
-import { image } from "@uploadthing/mime-types/image";
-import { text } from "@uploadthing/mime-types/text";
-import { video } from "@uploadthing/mime-types/video";
+import { audio } from "@linear-webdev/mime-types/audio";
+import { image } from "@linear-webdev/mime-types/image";
+import { text } from "@linear-webdev/mime-types/text";
+import { video } from "@linear-webdev/mime-types/video";
 
 import type { ExpandedRouteConfig } from "./types";
 import { objectKeys } from "./utils";
