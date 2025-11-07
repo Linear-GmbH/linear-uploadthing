@@ -3,13 +3,13 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.x",
-    "pnpm": "10.x"
+    "node": ">=20.x",
+    "pnpm": "9.x"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@9.5.0",
   "scripts": {
     "build:all": "turbo run build",
-    "build:vanilla": "turbo run build --filter uploadthing...",
+    "build:vanilla": "turbo run build --filter @linear-webdev/uploadthing",
     "build:react": "turbo run build --filter @uploadthing/react...",
     "build": "turbo run build --filter \"./packages/*\" --concurrency=15",
     "clean": "turbo run clean && git clean -xdf node_modules",
