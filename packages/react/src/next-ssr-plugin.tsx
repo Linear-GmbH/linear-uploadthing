@@ -3,7 +3,7 @@
 import { useId } from "react";
 import { useServerInsertedHTML } from "next/navigation";
 
-import type { EndpointMetadata } from "@uploadthing/shared";
+import type { EndpointMetadata } from "@linear-webdev/shared";
 
 declare const globalThis: {
   __UPLOADTHING?: EndpointMetadata;

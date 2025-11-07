@@ -1,9 +1,9 @@
 import {
   resolveMaybeUrlArg,
   warnIfInvalidPeerDependency,
-} from "@uploadthing/shared";
-import { version as uploadthingClientVersion } from "uploadthing/client";
-import type { FileRouter } from "uploadthing/types";
+} from "@linear-webdev/shared";
+import { version as uploadthingClientVersion } from "@linear-webdev/uploadthing/client";
+import type { FileRouter } from "@linear-webdev/uploadthing/types";
 
 import { peerDependencies } from "../../package.json";
 import type {
@@ -22,8 +22,8 @@ export const generateUploadButton = <TRouter extends FileRouter>(
   opts?: GenerateTypedHelpersOptions,
 ) => {
   warnIfInvalidPeerDependency(
-    "@uploadthing/react",
-    peerDependencies.uploadthing,
+    "@linear-webdev/react",
+    peerDependencies["@linear-webdev/uploadthing"],
     uploadthingClientVersion,
   );
 
@@ -49,8 +49,8 @@ export const generateUploadDropzone = <TRouter extends FileRouter>(
   opts?: GenerateTypedHelpersOptions,
 ) => {
   warnIfInvalidPeerDependency(
-    "@uploadthing/react",
-    peerDependencies.uploadthing,
+    "@linear-webdev/react",
+    peerDependencies["@linear-webdev/uploadthing"],
     uploadthingClientVersion,
   );
 
@@ -76,8 +76,8 @@ export const generateUploader = <TRouter extends FileRouter>(
   opts?: GenerateTypedHelpersOptions,
 ) => {
   warnIfInvalidPeerDependency(
-    "@uploadthing/react",
-    peerDependencies.uploadthing,
+    "@linear-webdev/react",
+    peerDependencies["@linear-webdev/uploadthing"],
     uploadthingClientVersion,
   );
 

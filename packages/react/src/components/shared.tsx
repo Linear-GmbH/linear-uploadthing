@@ -1,4 +1,4 @@
-import type { ClassListMerger } from "@uploadthing/shared";
+import type { ClassListMerger } from "@linear-webdev/shared";
 
 export function Spinner() {
   return (

@@ -5,10 +5,10 @@ import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import { render } from "vitest-browser-react";
 
 import {
-  createRouteHandler,
-  createUploadthing,
-  extractRouterConfig,
-} from "uploadthing/server";
+    createRouteHandler,
+    createUploadthing,
+    extractRouterConfig,
+} from "@linear-webdev/uploadthing/server";
 
 import { generateUploadButton } from "../src";
 

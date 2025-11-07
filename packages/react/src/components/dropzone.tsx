@@ -40,14 +40,14 @@ import {
   styleFieldToClassName,
   styleFieldToCssObject,
   UploadAbortedError,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 import type {
   ContentField,
   DropzoneOptions,
   ErrorMessage,
   StyleField,
-} from "@uploadthing/shared";
-import type { FileRouter } from "uploadthing/types";
+} from "@linear-webdev/shared";
+import type { FileRouter } from "@linear-webdev/uploadthing/types";
 
 import type { UploadthingComponentProps } from "../types";
 import { __useUploadThingInternal } from "../use-uploadthing";

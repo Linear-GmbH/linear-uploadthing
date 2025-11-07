@@ -1,8 +1,8 @@
 // Ripped from https://usehooks-ts.com/react-hook/use-fetch
 import { useEffect, useReducer, useRef } from "react";
 
-import type { FetchEsque } from "@uploadthing/shared";
-import { safeParseJSON } from "@uploadthing/shared";
+import type { FetchEsque } from "@linear-webdev/shared";
+import { safeParseJSON } from "@linear-webdev/shared";
 
 interface State<T> {
   data?: T | undefined;

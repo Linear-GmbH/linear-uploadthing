@@ -1,10 +1,10 @@
 {
-  "name": "@uploadthing/react",
-  "version": "7.3.3",
+  "name": "@linear-webdev/react",
+  "version": "1.0.1",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "github:pingdotgg/uploadthing",
+    "url": "github:Linear-GmbH/linear-uploadthing",
     "directory": "packages/react"
   },
   "sideEffects": false,
@@ -64,13 +64,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@uploadthing/shared": "workspace:*",
+    "@linear-webdev/shared": "workspace:*",
     "file-selector": "0.6.0"
   },
   "peerDependencies": {
     "next": "*",
     "react": "^17.0.2 || ^18.0.0 || ^19.0.0",
-    "uploadthing": "^7.2.0"
+    "@linear-webdev/uploadthing": "^1.0.0"
   },
   "peerDependenciesMeta": {
     "next": {
@@ -95,7 +95,7 @@
     "tailwindcss": "^3.4.16",
     "tsdown": "0.14.1",
     "typescript": "5.8.3",
-    "uploadthing": "workspace:*",
+    "@linear-webdev/uploadthing": "workspace:*",
     "vitest": "3.2.4",
     "vitest-browser-react": "0.3.0",
     "wait-on": "^8.0.1",

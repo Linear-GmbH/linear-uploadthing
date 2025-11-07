@@ -1,8 +1,8 @@
 import { expectTypeOf, it } from "vitest";
 import * as z from "zod";
 
-import { createUploadthing } from "uploadthing/server";
-import type { ClientUploadedFileData } from "uploadthing/types";
+import { createUploadthing } from "@linear-webdev/uploadthing/server";
+import type { ClientUploadedFileData } from "@linear-webdev/uploadthing/types";
 
 import { generateReactHelpers } from "../src";
 

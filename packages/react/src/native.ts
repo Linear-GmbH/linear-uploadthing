@@ -1,6 +1,6 @@
 export {
   /**
-   * @internal - if you're using @uploadthing/react, import this from the main entrypoint instead
+   * @internal - if you're using @linear-webdev/react, import this from the main entrypoint instead
    */
   generateReactHelpers,
   /**

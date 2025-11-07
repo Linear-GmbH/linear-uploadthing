@@ -4,7 +4,7 @@ import { setupWorker } from "msw/browser";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import { render } from "vitest-browser-react";
 
-import { createRouteHandler, createUploadthing } from "uploadthing/server";
+import { createRouteHandler, createUploadthing } from "@linear-webdev/uploadthing/server";
 
 import { generateUploadDropzone } from "../src";
 

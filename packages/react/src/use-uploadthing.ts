@@ -4,7 +4,7 @@ import type {
   EndpointMetadata,
   ExpandedRouteConfig,
   FetchEsque,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 import {
   INTERNAL_DO_NOT_USE__fatalClientError,
   resolveMaybeUrlArg,
@@ -13,17 +13,17 @@ import {
   UploadAbortedError,
   UploadThingError,
   warnIfInvalidPeerDependency,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 import {
   genUploader,
   version as uploadthingClientVersion,
-} from "uploadthing/client";
+} from "@linear-webdev/uploadthing/client";
 import type {
   EndpointArg,
   FileRouter,
   inferEndpointInput,
   inferErrorShape,
-} from "uploadthing/types";
+} from "@linear-webdev/uploadthing/types";
 
 import { peerDependencies } from "../package.json";
 import type { GenerateTypedHelpersOptions, UseUploadthingProps } from "./types";
@@ -67,7 +67,7 @@ function useUploadThingInternal<
   const { uploadFiles, routeRegistry } = genUploader<TRouter>({
     fetch,
     url,
-    package: "@uploadthing/react",
+    package: "@linear-webdev/react",
   });
 
   const [isUploading, setUploading] = useState(false);
@@ -161,8 +161,8 @@ export const generateReactHelpers = <TRouter extends FileRouter>(
   initOpts?: GenerateTypedHelpersOptions,
 ) => {
   warnIfInvalidPeerDependency(
-    "@uploadthing/react",
-    peerDependencies.uploadthing,
+    "@linear-webdev/react",
+    peerDependencies["@linear-webdev/uploadthing"],
     uploadthingClientVersion,
   );
 
@@ -172,7 +172,7 @@ export const generateReactHelpers = <TRouter extends FileRouter>(
   const clientHelpers = genUploader<TRouter>({
     fetch,
     url,
-    package: "@uploadthing/react",
+    package: "@linear-webdev/react",
   });
 
   function useUploadThing<TEndpoint extends keyof TRouter>(

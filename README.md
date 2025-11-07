@@ -5,6 +5,9 @@ with LINEAR's mime types.
 
 ## Publishing
 
+The following steps are extracted to the scripts in
+`./scripts/publish-packages.sh`.
+
 ### Setting Up
 
 ```shell
@@ -17,10 +20,9 @@ pnpm login
 Adjust the version in `packages/mime-types/package.json` as needed, then run:
 
 ```shell
-cd packages/mime-types
+cd ../mime-types
 pnpm build
 pnpm publish --access public
-cd ../..
 ```
 
 ### Step 2: Shared
@@ -28,11 +30,10 @@ cd ../..
 Adjust the version in `packages/shared/package.json` as needed, then run:
 
 ```shell
+cd ../shared
 pnpm i
-cd packages/shared
 pnpm build
 pnpm publish --access public
-cd ../..
 ```
 
 ### Step 3: UploadThing
@@ -40,9 +41,19 @@ cd ../..
 Adjust the version in `packages/uploadthing/package.json` as needed, then run:
 
 ```shell
+cd ../uploadthing
 pnpm i
-cd packages/uploadthing
 pnpm build
 pnpm publish --access public
-cd ../..
+```
+
+### Step 4: React
+
+Adjust the version in `packages/react/package.json` as needed, then run:
+
+```shell
+cd ../react
+pnpm i
+pnpm build
+pnpm publish --access public
 ```

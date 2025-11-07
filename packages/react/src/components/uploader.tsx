@@ -1,7 +1,7 @@
 "use client";
 
-import type { ErrorMessage } from "@uploadthing/shared";
-import type { FileRouter } from "uploadthing/types";
+import type { ErrorMessage } from "@linear-webdev/shared";
+import type { FileRouter } from "@linear-webdev/uploadthing/types";
 
 import type { UploadthingComponentProps } from "../types";
 import { UploadButton } from "./button";

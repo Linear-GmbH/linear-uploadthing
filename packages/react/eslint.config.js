@@ -8,5 +8,5 @@ export default [
   },
   ...baseConfig,
   ...reactConfig,
-  noSelfImport("@uploadthing/react"),
+  noSelfImport("@linear-webdev/react"),
 ];

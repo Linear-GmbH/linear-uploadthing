@@ -6,7 +6,7 @@ import type {
   MaybePromise,
   ProgressGranularity,
   UploadThingError,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 import type {
   AnyFileRoute,
   ClientUploadedFileData,
@@ -15,7 +15,7 @@ import type {
   inferEndpointInput,
   inferEndpointOutput,
   inferErrorShape,
-} from "uploadthing/types";
+} from "@linear-webdev/uploadthing/types";
 
 export interface GenerateTypedHelpersOptions {
   /**

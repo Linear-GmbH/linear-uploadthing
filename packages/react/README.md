@@ -1,4 +1,4 @@
-# @uploadthing/react
+# @linear-webdev/react
 
 Learn more: [docs.uploadthing.com](https://docs.uploadthing.com)
 
@@ -8,7 +8,7 @@ Learn more: [docs.uploadthing.com](https://docs.uploadthing.com)
 
 ```tsx
 // Name is temp
-import { UploadButton } from "@uploadthing/react";
+import { UploadButton } from "@linear-webdev/react";
 
 import type { FileRouter } from "./someUploadRouter";
 
@@ -34,7 +34,11 @@ export const SomePage = () => {
 
 ```tsx
 // Name is temp
-import { UploadFileView, UploadProvider, UploadZone } from "@uploadthing/react";
+import {
+  UploadFileView,
+  UploadProvider,
+  UploadZone,
+} from "@linear-webdev/react";
 
 import type { FileRouter } from "./someUploadRouter";
 
