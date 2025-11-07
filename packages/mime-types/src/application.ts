@@ -1,4 +1,8 @@
 export const application = {
+  "application/vnd.autodesk-revit": {
+    source: "iana",
+    extensions:  ['rvt', 'rfa', 'rte'],
+  },
   "application/andrew-inset": {
     source: "iana",
     extensions: ["ez"],
