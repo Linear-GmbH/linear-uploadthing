@@ -6,8 +6,8 @@
     "paths": {
       "@linear-webdev/shared": ["packages/shared/src"],
       "@linear-webdev/mime-types": ["packages/mime-types/src"],
-      "@uploadthing/react": ["packages/react/src"],
-      "@uploadthing/react/*": ["packages/react/src/*"],
+      "@linear-webdev/react": ["packages/react/src"],
+      "@linear-webdev/react/*": ["packages/react/src/*"],
       "@uploadthing/expo": ["packages/expo/src"],
       "@uploadthing/expo/*": ["packages/expo/src/*"],
       "@uploadthing/solid": ["packages/solid/src"],
