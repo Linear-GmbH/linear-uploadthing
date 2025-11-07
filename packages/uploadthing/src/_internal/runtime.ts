@@ -4,7 +4,7 @@ import * as FiberRef from "effect/FiberRef";
 import * as Layer from "effect/Layer";
 import * as ManagedRuntime from "effect/ManagedRuntime";
 
-import type { FetchEsque } from "@uploadthing/shared";
+import type { FetchEsque } from "@linear-webdev/shared";
 
 import { configProvider } from "./config";
 import { withLogFormat, withMinimalLogLevel } from "./logger";

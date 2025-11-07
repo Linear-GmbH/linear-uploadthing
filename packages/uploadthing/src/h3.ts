@@ -2,7 +2,7 @@ import * as Effect from "effect/Effect";
 import type { H3Event } from "h3";
 import { defineEventHandler, toWebRequest } from "h3";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 import { makeAdapterHandler } from "./_internal/handler";
 import type { CreateBuilderOptions } from "./_internal/upload-builder";

@@ -3,14 +3,14 @@ import type * as Config from "effect/Config";
 import type * as LogLevel from "effect/LogLevel";
 
 import type {
-  ACL,
-  ContentDisposition,
-  Either,
-  FetchEsque,
-  MaybeUrl,
-  SerializedUploadThingError,
-  Time,
-} from "@uploadthing/shared";
+    ACL,
+    ContentDisposition,
+    Either,
+    FetchEsque,
+    MaybeUrl,
+    SerializedUploadThingError,
+    Time,
+} from "@linear-webdev/shared";
 
 import type { LogFormat } from "../_internal/logger";
 import type { UploadedFileData } from "../types";

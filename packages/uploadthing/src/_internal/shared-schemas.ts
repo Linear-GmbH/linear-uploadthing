@@ -1,7 +1,7 @@
 import * as S from "effect/Schema";
 
-import type { Json } from "@uploadthing/shared";
-import { ValidACLs, ValidContentDispositions } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
+import { ValidACLs, ValidContentDispositions } from "@linear-webdev/shared";
 
 export const ContentDispositionSchema = S.Literal(...ValidContentDispositions);
 export const ACLSchema = S.Literal(...ValidACLs);

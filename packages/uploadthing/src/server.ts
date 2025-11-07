@@ -1,7 +1,7 @@
 import * as Effect from "effect/Effect";
 
-import type { Json } from "@uploadthing/shared";
-import { UploadThingError } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
+import { UploadThingError } from "@linear-webdev/shared";
 
 import { makeAdapterHandler } from "./_internal/handler";
 import { extractRouterConfig as extractEffect } from "./_internal/route-config";

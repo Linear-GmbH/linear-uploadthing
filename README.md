@@ -20,6 +20,7 @@ Adjust the version in `packages/mime-types/package.json` as needed, then run:
 cd packages/mime-types
 pnpm build
 pnpm publish --access public
+cd ../..
 ```
 
 ### Step 2: Shared
@@ -27,8 +28,21 @@ pnpm publish --access public
 Adjust the version in `packages/shared/package.json` as needed, then run:
 
 ```shell
-cd packages/shared
 pnpm i
-pnpm tsdown
+cd packages/shared
+pnpm build
 pnpm publish --access public
+cd ../..
+```
+
+### Step 3: UploadThing
+
+Adjust the version in `packages/uploadthing/package.json` as needed, then run:
+
+```shell
+pnpm i
+cd packages/uploadthing
+pnpm build
+pnpm publish --access public
+cd ../..
 ```

@@ -1,22 +1,22 @@
 import type { Schema } from "effect/Schema";
 
 import type {
-  ErrorMessage,
-  FileRouterInputConfig,
-  Json,
-  JsonObject,
-  MaybePromise,
-  RouteOptions,
-  Simplify,
-  UploadThingError,
-} from "@uploadthing/shared";
+    ErrorMessage,
+    FileRouterInputConfig,
+    Json,
+    JsonObject,
+    MaybePromise,
+    RouteOptions,
+    Simplify,
+    UploadThingError,
+} from "@linear-webdev/shared";
 
 import type { JsonParser } from "./parser";
 import type {
-  FileUploadDataWithCustomId,
-  NewPresignedUrl,
-  UploadActionPayload,
-  UploadedFileData,
+    FileUploadDataWithCustomId,
+    NewPresignedUrl,
+    UploadActionPayload,
+    UploadedFileData,
 } from "./shared-schemas";
 
 export type UTRegionAlias =

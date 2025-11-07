@@ -1,40 +1,40 @@
 import * as Arr from "effect/Array";
 import * as Micro from "effect/Micro";
 
-import type { FetchEsque } from "@uploadthing/shared";
+import type { FetchEsque } from "@linear-webdev/shared";
 import {
-  createIdentityProxy,
-  FetchContext,
-  resolveMaybeUrlArg,
-  UploadAbortedError,
-  UploadPausedError,
-} from "@uploadthing/shared";
+    createIdentityProxy,
+    FetchContext,
+    resolveMaybeUrlArg,
+    UploadAbortedError,
+    UploadPausedError,
+} from "@linear-webdev/shared";
 
 import * as pkgJson from "../package.json";
 import type {
-  AnyFile,
-  FailedFile,
-  PendingFile,
-  UploadedFile,
-  UploadFilesOptions,
-  UploadingFile,
+    AnyFile,
+    FailedFile,
+    PendingFile,
+    UploadedFile,
+    UploadFilesOptions,
+    UploadingFile,
 } from "./_internal/client-future";
 import {
-  makePendingFile,
-  requestPresignedUrls,
-  transitionToFailed,
-  uploadFile,
+    makePendingFile,
+    requestPresignedUrls,
+    transitionToFailed,
+    uploadFile,
 } from "./_internal/client-future";
 import type { Deferred } from "./_internal/deferred";
 import { createDeferred } from "./_internal/deferred";
 import { generateTraceHeaders } from "./_internal/random-hex";
 import type {
-  EndpointArg,
-  FileRouter,
-  GenerateUploaderOptions,
-  inferEndpointInput,
-  NewPresignedUrl,
-  RouteRegistry,
+    EndpointArg,
+    FileRouter,
+    GenerateUploaderOptions,
+    inferEndpointInput,
+    NewPresignedUrl,
+    RouteRegistry,
 } from "./types";
 
 export const version = pkgJson.version;
@@ -50,7 +50,7 @@ export {
   UploadAbortedError,
   /** @public */
   UploadPausedError,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 
 export * from "./_internal/client-future";
 

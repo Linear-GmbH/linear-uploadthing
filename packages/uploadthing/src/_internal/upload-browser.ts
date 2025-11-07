@@ -2,16 +2,16 @@ import { unsafeCoerce } from "effect/Function";
 import * as Micro from "effect/Micro";
 import { hasProperty, isRecord } from "effect/Predicate";
 
-import type { FetchContext, FetchError } from "@uploadthing/shared";
-import { fetchEff, UploadThingError } from "@uploadthing/shared";
+import type { FetchContext, FetchError } from "@linear-webdev/shared";
+import { fetchEff, UploadThingError } from "@linear-webdev/shared";
 
 import { version } from "../../package.json";
 import type {
-  ClientUploadedFileData,
-  FileRouter,
-  inferEndpointOutput,
-  NewPresignedUrl,
-  UploadFilesOptions,
+    ClientUploadedFileData,
+    FileRouter,
+    inferEndpointOutput,
+    NewPresignedUrl,
+    UploadFilesOptions,
 } from "../types";
 import { logDeprecationWarning } from "./deprecations";
 import type { TraceHeaders } from "./random-hex";

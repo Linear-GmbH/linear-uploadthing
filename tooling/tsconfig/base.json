@@ -11,7 +11,7 @@
       "@uploadthing/expo": ["packages/expo/src"],
       "@uploadthing/expo/*": ["packages/expo/src/*"],
       "@uploadthing/solid": ["packages/solid/src"],
-      "uploadthing/*": ["packages/uploadthing/src/*"]
+      "@linear-webdev/uploadthing/*": ["packages/uploadthing/src/*"]
     }
   }
 }

@@ -4,7 +4,7 @@ import * as v from "valibot";
 import { expect, expectTypeOf, it } from "vitest";
 import * as z from "zod";
 
-import { noop } from "@uploadthing/shared";
+import { noop } from "@linear-webdev/shared";
 
 import { getParseFn, ParserError } from "../../src/_internal/parser";
 import { createBuilder } from "../../src/_internal/upload-builder";

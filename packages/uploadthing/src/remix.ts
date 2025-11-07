@@ -1,7 +1,7 @@
 import type { ActionFunctionArgs } from "@remix-run/server-runtime";
 import * as Effect from "effect/Effect";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 import { makeAdapterHandler } from "./_internal/handler";
 import type { CreateBuilderOptions } from "./_internal/upload-builder";

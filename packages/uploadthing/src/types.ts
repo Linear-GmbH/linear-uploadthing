@@ -1,11 +1,11 @@
 import type * as LogLevel from "effect/LogLevel";
 
 import type {
-  ErrorMessage,
-  ExtendObjectIf,
-  FetchEsque,
-  MaybePromise,
-} from "@uploadthing/shared";
+    ErrorMessage,
+    ExtendObjectIf,
+    FetchEsque,
+    MaybePromise,
+} from "@linear-webdev/shared";
 
 import type { LogFormat } from "./_internal/logger";
 import type { AnyFileRoute, FileRoute } from "./_internal/types";
@@ -15,7 +15,7 @@ export * from "./sdk/types";
 export type {
   EndpointMetadata,
   ExpandedRouteConfig,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 
 export type {
   FileUploadData,

@@ -4,17 +4,17 @@ import * as Effect from "effect/Effect";
 import * as Predicate from "effect/Predicate";
 
 import {
-  generateKey,
-  generateSignedURL,
-  UploadThingError,
-} from "@uploadthing/shared";
+    generateKey,
+    generateSignedURL,
+    UploadThingError,
+} from "@linear-webdev/shared";
 import type {
-  ACL,
-  ContentDisposition,
-  Json,
-  MaybeUrl,
-  SerializedUploadThingError,
-} from "@uploadthing/shared";
+    ACL,
+    ContentDisposition,
+    Json,
+    MaybeUrl,
+    SerializedUploadThingError,
+} from "@linear-webdev/shared";
 
 import { IngestUrl, UTToken } from "../_internal/config";
 import { uploadWithoutProgress } from "../_internal/upload-server";

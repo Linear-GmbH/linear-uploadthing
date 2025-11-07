@@ -1,13 +1,13 @@
 import { unsafeCoerce } from "effect/Function";
 import * as Micro from "effect/Micro";
 
-import type { FetchContext, MaybePromise } from "@uploadthing/shared";
+import type { FetchContext, MaybePromise } from "@linear-webdev/shared";
 import {
-  fetchEff,
-  getErrorTypeFromStatusCode,
-  parseResponseJson,
-  UploadThingError,
-} from "@uploadthing/shared";
+    fetchEff,
+    getErrorTypeFromStatusCode,
+    parseResponseJson,
+    UploadThingError,
+} from "@linear-webdev/shared";
 
 import * as pkgJson from "../../package.json";
 import type { TraceHeaders } from "./random-hex";

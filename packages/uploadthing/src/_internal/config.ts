@@ -4,9 +4,9 @@ import * as Effect from "effect/Effect";
 import * as S from "effect/Schema";
 
 import {
-  filterDefinedObjectValues,
-  UploadThingError,
-} from "@uploadthing/shared";
+    filterDefinedObjectValues,
+    UploadThingError,
+} from "@linear-webdev/shared";
 
 import { UploadThingToken } from "./shared-schemas";
 
@@ -39,7 +39,7 @@ const envProvider = ConfigProvider.fromEnv().pipe(
       },
     ),
   ),
-  ConfigProvider.nested("uploadthing"),
+  ConfigProvider.nested("@linear-webdev/uploadthing"),
   ConfigProvider.constantCase,
 );
 

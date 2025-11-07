@@ -3,7 +3,7 @@ import * as HttpClientRequest from "@effect/platform/HttpClientRequest";
 import * as Effect from "effect/Effect";
 import { unsafeCoerce } from "effect/Function";
 
-import { UploadThingError } from "@uploadthing/shared";
+import { UploadThingError } from "@linear-webdev/shared";
 
 import { version } from "../../package.json";
 import type { FileEsque } from "../sdk/types";

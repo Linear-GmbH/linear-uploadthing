@@ -1,7 +1,7 @@
 import * as Effect from "effect/Effect";
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 import { makeAdapterHandler } from "./_internal/handler";
 import { toWebRequest } from "./_internal/to-web-request";

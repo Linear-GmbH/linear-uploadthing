@@ -6,17 +6,17 @@ import * as Redacted from "effect/Redacted";
 import * as S from "effect/Schema";
 import { beforeEach, describe, expect } from "vitest";
 
-import { UploadThingError } from "@uploadthing/shared";
+import { UploadThingError } from "@linear-webdev/shared";
 
 import {
-  configProvider,
-  IngestUrl,
-  IsDevelopment,
-  UTToken,
+    configProvider,
+    IngestUrl,
+    IsDevelopment,
+    UTToken,
 } from "../../src/_internal/config";
 import {
-  ParsedToken,
-  UploadThingToken,
+    ParsedToken,
+    UploadThingToken,
 } from "../../src/_internal/shared-schemas";
 
 const app1TokenData = {

@@ -1,12 +1,12 @@
 import { Readable } from "node:stream";
 import * as Effect from "effect/Effect";
 import type {
-  Request as ExpressRequest,
-  Response as ExpressResponse,
+    Request as ExpressRequest,
+    Response as ExpressResponse,
 } from "express";
 import { Router as ExpressRouter } from "express";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 import { makeAdapterHandler } from "./_internal/handler";
 import { getPostBody, toWebRequest } from "./_internal/to-web-request";

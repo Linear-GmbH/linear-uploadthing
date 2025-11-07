@@ -1,17 +1,17 @@
 import * as Arr from "effect/Array";
 import * as Micro from "effect/Micro";
 
-import type { ExpandedRouteConfig, FetchEsque } from "@uploadthing/shared";
+import type { ExpandedRouteConfig, FetchEsque } from "@linear-webdev/shared";
 import {
-  createIdentityProxy,
-  FetchContext,
-  fileSizeToBytes,
-  matchFileType,
-  objectKeys,
-  resolveMaybeUrlArg,
-  UploadAbortedError,
-  UploadPausedError,
-} from "@uploadthing/shared";
+    createIdentityProxy,
+    FetchContext,
+    fileSizeToBytes,
+    matchFileType,
+    objectKeys,
+    resolveMaybeUrlArg,
+    UploadAbortedError,
+    UploadPausedError,
+} from "@linear-webdev/shared";
 
 import * as pkgJson from "../package.json";
 import type { Deferred } from "./_internal/deferred";
@@ -20,16 +20,16 @@ import { generateTraceHeaders } from "./_internal/random-hex";
 import { uploadFile, uploadFilesInternal } from "./_internal/upload-browser";
 import { createUTReporter } from "./_internal/ut-reporter";
 import type {
-  ClientUploadedFileData,
-  CreateUploadOptions,
-  EndpointArg,
-  FileRouter,
-  GenerateUploaderOptions,
-  inferEndpointInput,
-  inferEndpointOutput,
-  NewPresignedUrl,
-  RouteRegistry,
-  UploadFilesOptions,
+    ClientUploadedFileData,
+    CreateUploadOptions,
+    EndpointArg,
+    FileRouter,
+    GenerateUploaderOptions,
+    inferEndpointInput,
+    inferEndpointOutput,
+    NewPresignedUrl,
+    RouteRegistry,
+    UploadFilesOptions,
 } from "./types";
 
 export const version = pkgJson.version;
@@ -49,7 +49,7 @@ export {
   UploadAbortedError,
   /** @public */
   UploadPausedError,
-} from "@uploadthing/shared";
+} from "@linear-webdev/shared";
 
 /**
  * Validate that a file is of a valid type given a route config
@@ -114,7 +114,7 @@ export const genUploader = <TRouter extends FileRouter>(
     const traceHeaders = generateTraceHeaders();
     const utReporter = createUTReporter({
       endpoint: String(endpoint),
-      package: initOpts?.package ?? "uploadthing/client",
+      package: initOpts?.package ?? "@linear-webdev/uploadthing/client",
       url: resolveMaybeUrlArg(initOpts?.url),
       headers: opts.headers,
       traceHeaders,
@@ -270,7 +270,7 @@ export const genUploader = <TRouter extends FileRouter>(
       ...opts,
       skipPolling: {} as never, // Remove in a future version, it's type right not is an ErrorMessage<T> to help migrations.
       url: resolveMaybeUrlArg(initOpts?.url),
-      package: initOpts?.package ?? "uploadthing/client",
+      package: initOpts?.package ?? "@linear-webdev/uploadthing/client",
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       input: (opts as any).input as inferEndpointInput<TRouter[TEndpoint]>,
     })

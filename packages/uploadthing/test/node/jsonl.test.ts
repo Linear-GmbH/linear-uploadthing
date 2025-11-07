@@ -5,7 +5,7 @@ import * as Redacted from "effect/Redacted";
 import * as Stream from "effect/Stream";
 import { beforeEach, describe, expect, vi } from "vitest";
 
-import { signPayload } from "@uploadthing/shared";
+import { signPayload } from "@linear-webdev/shared";
 
 import { handleJsonLineStream } from "../../src/_internal/jsonl";
 import { MetadataFetchStreamPart } from "../../src/_internal/shared-schemas";

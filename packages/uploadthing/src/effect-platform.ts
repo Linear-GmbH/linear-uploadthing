@@ -3,7 +3,7 @@ import * as HttpServerRequest from "@effect/platform/HttpServerRequest";
 import * as Effect from "effect/Effect";
 import * as Layer from "effect/Layer";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 import { configProvider } from "./_internal/config";
 import { AdapterArguments, createRequestHandler } from "./_internal/handler";

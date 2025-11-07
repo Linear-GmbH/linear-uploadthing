@@ -4,7 +4,7 @@ import * as Data from "effect/Data";
 import * as Runtime from "effect/Runtime";
 import * as Schema from "effect/Schema";
 
-import type { Json } from "@uploadthing/shared";
+import type { Json } from "@linear-webdev/shared";
 
 export type ParseFn<TType> = (input: unknown) => Promise<TType>;
 

@@ -2,7 +2,7 @@ import * as Config from "effect/Config";
 import * as Data from "effect/Data";
 import * as Effect from "effect/Effect";
 
-import { UploadThingError } from "@uploadthing/shared";
+import { UploadThingError } from "@linear-webdev/shared";
 
 type IncomingMessageLike = {
   method?: string | undefined;

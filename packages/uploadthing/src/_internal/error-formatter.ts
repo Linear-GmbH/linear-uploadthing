@@ -1,4 +1,4 @@
-import type { UploadThingError } from "@uploadthing/shared";
+import type { UploadThingError } from "@linear-webdev/shared";
 
 import type { FileRouter, inferErrorShape } from "../types";
 
