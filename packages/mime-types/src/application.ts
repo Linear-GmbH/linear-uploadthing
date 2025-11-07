@@ -1,7 +1,15 @@
 export const application = {
   "application/vnd.autodesk-revit": {
-    source: "iana",
+    source: "linear",
     extensions:  ['rvt', 'rfa', 'rte'],
+  },
+  "application/acad": {
+    source: "linear",
+    extensions: ["dwg"],
+  },
+  "application/x-dwg": {
+    source: "linear",
+    extensions: ["dwg"],
   },
   "application/andrew-inset": {
     source: "iana",
@@ -315,6 +323,7 @@ export const application = {
     extensions: [
       "bin",
       "dms",
+      "dwg",
       "lrf",
       "mar",
       "so",

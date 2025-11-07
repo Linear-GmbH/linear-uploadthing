@@ -1,4 +1,8 @@
 export const image = {
+  "image/apng": {
+    source: "linear",
+    extensions: ["apng", "png"],
+  },
   "image/aces": {
     source: "iana",
     extensions: ["exr"],

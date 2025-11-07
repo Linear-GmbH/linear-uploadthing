@@ -17,43 +17,59 @@ pnpm login
 
 ### Step 1: Mime Types
 
-Adjust the version in `packages/mime-types/package.json` as needed, then run:
+```shell
+cd packages/mime-types
+pnpm build
+```
+
+Adjust the version in `packages/mime-types/package.json` as needed, stash the
+changes, then run:
 
 ```shell
-cd ../mime-types
-pnpm build
 pnpm publish --access public
 ```
 
 ### Step 2: Shared
 
-Adjust the version in `packages/shared/package.json` as needed, then run:
-
 ```shell
 cd ../shared
 pnpm i
 pnpm build
+```
+
+Adjust the version in `packages/shared/package.json` as needed, stash the
+changes, then run:
+
+```shell
 pnpm publish --access public
 ```
 
 ### Step 3: UploadThing
 
-Adjust the version in `packages/uploadthing/package.json` as needed, then run:
-
 ```shell
 cd ../uploadthing
 pnpm i
 pnpm build
+```
+
+Adjust the version in `packages/uploadthing/package.json` as needed, stash the
+changes, then run:
+
+```shell
 pnpm publish --access public
 ```
 
 ### Step 4: React
 
-Adjust the version in `packages/react/package.json` as needed, then run:
-
 ```shell
 cd ../react
 pnpm i
 pnpm build
+```
+
+Adjust the version in `packages/react/package.json` as needed, stash the
+changes, then run:
+
+```shell
 pnpm publish --access public
 ```
