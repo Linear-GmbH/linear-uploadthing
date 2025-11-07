@@ -5,8 +5,8 @@ with LINEAR's mime types.
 
 ## Publishing
 
-The following steps are extracted to the scripts in
-`./scripts/publish-packages.sh`.
+NOTE: Stash the changes before publishing (commit all versions in one commit)
+and revert the changes made to package.json files after publishing.
 
 ### Setting Up
 
