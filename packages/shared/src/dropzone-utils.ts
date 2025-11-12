@@ -31,7 +31,7 @@ function accepts(file: File, acceptedFiles: string | string[]): boolean {
     const fileName = file.name;
     const mimeType = file.type.toLowerCase();
     const baseMimeType = mimeType.replace(/\/.*$/, "");
-
+    console.log({ acceptedFilesArray, fileName, mimeType, baseMimeType });
     return acceptedFilesArray.some((type) => {
       const validType = type.trim().toLowerCase();
       if (validType.startsWith(".")) {
