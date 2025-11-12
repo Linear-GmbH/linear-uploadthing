@@ -29,6 +29,8 @@ changes, then run:
 pnpm publish --access public
 ```
 
+Revert changhes to `packages/mime-types/package.json` after publishing.
+
 ### Step 2: Shared
 
 ```shell
@@ -43,6 +45,8 @@ changes, then run:
 ```shell
 pnpm publish --access public
 ```
+
+Revert changhes to `packages/shared/package.json` after publishing.
 
 ### Step 3: UploadThing
 
@@ -59,6 +63,8 @@ changes, then run:
 pnpm publish --access public
 ```
 
+Revert changhes to `packages/uploadthing/package.json` after publishing.
+
 ### Step 4: React
 
 ```shell
@@ -73,3 +79,5 @@ changes, then run:
 ```shell
 pnpm publish --access public
 ```
+
+Revert changhes to `packages/react/package.json` after publishing.

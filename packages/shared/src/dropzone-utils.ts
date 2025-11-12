@@ -1,3 +1,5 @@
+import { mimeTypes } from "@linear-webdev/mime-types";
+
 export type AcceptProp = Record<string, string[]>;
 
 export type DropzoneOptions = {
@@ -31,7 +33,7 @@ function accepts(file: File, acceptedFiles: string | string[]): boolean {
     const fileName = file.name;
     const mimeType = file.type.toLowerCase();
     const baseMimeType = mimeType.replace(/\/.*$/, "");
-    console.log({ acceptedFilesArray, fileName, mimeType, baseMimeType });
+
     return acceptedFilesArray.some((type) => {
       const validType = type.trim().toLowerCase();
       if (validType.startsWith(".")) {
@@ -40,7 +42,9 @@ function accepts(file: File, acceptedFiles: string | string[]): boolean {
         // This is something like a image/* mime type
         return baseMimeType === validType.replace(/\/.*$/, "");
       }
-      return mimeType === validType;
+      // This is a specific mime type like image/png or the specific extension like .png
+      const fileExtensions = mimeTypes[type as keyof typeof mimeTypes].extensions
+      return mimeType === validType || fileExtensions.some((ext) => fileName.toLowerCase().endsWith(ext));
     });
   }
   return true;
