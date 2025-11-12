@@ -6,5 +6,5 @@ export default [
     ignores: ["dist/**"],
   },
   ...baseConfig,
-  noSelfImport("@uploadthing/mime-types"),
+  noSelfImport("@linear-webdev/mime-types"),
 ];

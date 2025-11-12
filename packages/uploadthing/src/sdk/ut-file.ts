@@ -1,4 +1,4 @@
-import { lookup } from "@uploadthing/mime-types";
+import { lookup } from "@linear-webdev/mime-types";
 
 interface UTFilePropertyBag extends BlobPropertyBag {
   lastModified?: number | undefined;
