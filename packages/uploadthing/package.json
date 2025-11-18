@@ -1,6 +1,6 @@
 {
   "name": "@linear-webdev/uploadthing",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "sideEffects": false,
   "engines": {

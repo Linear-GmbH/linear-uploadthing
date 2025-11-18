@@ -325,14 +325,7 @@ export function UploadButton<
       data-state={state}
     >
       <label
-        className={cn(
-          "group relative flex h-10 w-36 cursor-pointer items-center justify-center overflow-hidden rounded-md text-white after:transition-[width] after:duration-500 focus-within:ring-2 focus-within:ring-blue-600 focus-within:ring-offset-2",
-          "disabled:pointer-events-none",
-          "data-[state=disabled]:cursor-not-allowed data-[state=readying]:cursor-not-allowed",
-          "data-[state=disabled]:bg-blue-400 data-[state=ready]:bg-blue-600 data-[state=readying]:bg-blue-400 data-[state=uploading]:bg-blue-400",
-          "after:absolute after:left-0 after:h-full after:w-[var(--progress-width)] after:content-[''] data-[state=uploading]:after:bg-blue-600",
-          styleFieldToClassName($props.appearance?.button, styleFieldArg),
-        )}
+        className={styleFieldToClassName($props.appearance?.button, styleFieldArg)}
         style={styleFieldToCssObject($props.appearance?.button, styleFieldArg)}
         data-state={state}
         data-ut-element="button"
